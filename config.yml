@@ -1,0 +1,9 @@
+#environment config
+automationEngine: 
+  host: VVNFIBODEV02
+  port: 2217
+  client: 6000
+  user: UC
+  department: UC
+  password: UC
+  packagesPath: PACKAGES

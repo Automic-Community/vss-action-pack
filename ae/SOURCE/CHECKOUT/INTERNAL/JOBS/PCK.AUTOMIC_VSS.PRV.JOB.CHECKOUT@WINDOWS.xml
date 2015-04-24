@@ -139,21 +139,21 @@ if %ISFILE% == 1 (
   set /a errors=4 > nul
 )
 
-:IF &UC4RB_VSS_USER# <> ''
-:  IF &UC4RB_VSS_PASSWORD# = '--10'
-:    SET &UC4RB_LOGGING_PARAMETER# = "VSS username/VSS password"
-:    SET &UC4RB_LOGGING_ERROR# = "VSS username and VSS password must be specified or left empty together"
-:    INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.LOGGING_ERROR_PARAMETER
-     set /a errors=4
-:  ENDIF
-:ELSE
-:  IF &UC4RB_VSS_PASSWORD# <> '--10'
-:    SET &UC4RB_LOGGING_PARAMETER# = "VSS username/VSS password"
-:    SET &UC4RB_LOGGING_ERROR# = "VSS username and VSS password must be specified or left empty together"
-:    INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.LOGGING_ERROR_PARAMETER
-     set /a errors=4
-:  ENDIF
-:ENDIF
+!:IF &UC4RB_VSS_USER# <> ''
+!:  IF &UC4RB_VSS_PASSWORD# = '--10'
+!:    SET &UC4RB_LOGGING_PARAMETER# = "VSS username/VSS password"
+!:    SET &UC4RB_LOGGING_ERROR# = "VSS username and VSS password must be specified or left empty together"
+!:    INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.LOGGING_ERROR_PARAMETER
+!     set /a errors=4
+!:  ENDIF
+!:ELSE
+!:  IF &UC4RB_VSS_PASSWORD# <> '--10'
+!:    SET &UC4RB_LOGGING_PARAMETER# = "VSS username/VSS password"
+!:    SET &UC4RB_LOGGING_ERROR# = "VSS username and VSS password must be specified or left empty together"
+!:    INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.LOGGING_ERROR_PARAMETER
+!     set /a errors=4
+!:  ENDIF
+!:ENDIF
 
 !ensure Working Directory existed
 :INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.ENSURE_DIRECTORY_EXISTS_WINDOWS_CONSOLE "UC4RB_CONVERTED_STRING" = "UC4RB_VSS_WORKING_DIR"

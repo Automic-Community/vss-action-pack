@@ -72,4 +72,4 @@ Setup_suite
 Teardown_suite
     [Documentation]    TODO: Write all steps for cleanup after testing here
     Log    Testing for Checkout Template end
-    #Delete Dir    ${DEFAULT_OUTPUT_DIR}${/}
+    Delete Dir    ${DEFAULT_OUTPUT_DIR}${/}

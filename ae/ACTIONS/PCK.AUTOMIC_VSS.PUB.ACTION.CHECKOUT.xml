@@ -295,7 +295,7 @@ Checks out a file and makes the working copy of the file in the current project 
 * Item: Specifies one or more files to check out. The use of wildcard is supported.
 * Recursive: Checks out all files that match the itemspec in the current directory or specified location and subfolders. (Option -R)
 * Ignore Case:Ignores case, for example, the upper-case letter A is considered the same as the lower-case letter a. (Option -IC)
-* Comment: Specify checkout comment apply for all items. Left this field blank Ã¬f no comment. (Option -C)
+* Comment: Specify checkout comment apply for all items. Left this field blank if no comment. (Option -C)
 = Behavior =
 = Outputs =
 * Return code is 0 or 1 if success

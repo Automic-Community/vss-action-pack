@@ -1,0 +1,47 @@
+*** Settings ***
+Documentation     THIS CONTEXT FILE WORKING WITH AUTOMATED TEST SYSTEM
+Resource          actions.txt
+Resource          ../env/default.txt
+Resource          ../testdata/dataForPromptset.txt
+Resource          ../testdata/loginobjects.txt
+
+*** Variables ***
+#- CONTEXT VARIABLES ---
+${_AGENT}         /
+${_LOGIN}         /
+${_WORKING_DIR}    /
+${_DEFAULT_OUTPUT_DIR}    /
+${_DEFAULT_SOURCE_DIR}    /
+${_VSS_SS_UTILITY_DIR}    /
+${_VSS_DB_DIR}    /
+${_VSS_USER}      /
+${_VSS_PASSWORD}    /
+
+*** Key Words ***
+Init Agent
+    [Documentation]    Requirement
+    Run Keyword If    '${ENV}' == 'WIN'    Init WIN Environment
+    Run Keyword If    '${ENV}' == 'UNIX'    Init UNIX Environment
+    Run Keyword If    '${ENV}' == 'VVNSIEBEL06' and '${APP}' == 'VSS'    Init VVNSIEBEL06 Agent
+
+Init WIN Environment
+    Set Global Variable    ${/}    \\
+    Set Global Variable    ${_OS}    WIN
+
+Init UNIX Environment
+    Set Global Variable    ${/}    /
+    Set Global Variable    ${_OS}    UNIX
+
+Init VVNSIEBEL06 Agent
+    [Documentation]    TODO: Write agent used to test description here
+    Set Global Variable    ${/}    \\
+    Set Global Variable    ${_OS}    WIN
+    Set Global Variable    ${_AGENT}    ${VVNSIEBEL06_AGENT}
+    Set Global Variable    ${_LOGIN}    ${LOGIN.ALL}
+    Set Global Variable    ${_WORKING_DIR}    D:\\AT_sources\\
+    Set Global Variable    ${_DEFAULT_OUTPUT_DIR}    ${VVNSIEBEL06_DEFAULT_OUTPUT_DIR}
+    Set Global Variable    ${_DEFAULT_SOURCE_DIR}    ${VVNSIEBEL06_DEFAULT_SOURCE_DIR}
+    Set Global Variable    ${_VSS_SS_UTILITY_DIR}    ${VVNSIEBEL06_SS_UTILITY_DIR}
+    Set Global Variable    ${_VSS_DB_DIR}    ${VVNSIEBEL06_DB_DIR}
+    Set Global Variable    ${_VSS_USER}    ${VVNSIEBEL06_VSS_USER}
+    Set Global Variable    ${_VSS_PASSWORD}    ${VVNSIEBEL06_VSS_PASSWORD}

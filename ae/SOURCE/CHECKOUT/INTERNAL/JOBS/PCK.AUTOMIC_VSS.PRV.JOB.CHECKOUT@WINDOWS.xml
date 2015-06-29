@@ -155,14 +155,18 @@ if %ISFILE% == 1 (
 !:  ENDIF
 !:ENDIF
 
-!ensure Working Directory existed
-:INC PCK.AUTOMIC_SHARED.PUB.INCLUDE.ENSURE_DIRECTORY_EXISTS_WINDOWS_CONSOLE "UC4RB_CONVERTED_STRING" = "UC4RB_VSS_WORKING_DIR"
-
 ! stop execution if validation errors occurred
 if %errors% gtr 0 (
   set retcode=%errors%
   goto :retcode
 )
+
+! ensure Working Directory existed
+cd /d "&UC4RB_VSS_WORKING_DIR#" > nul
+@if NOT %ERRORLEVEL% == 0 (
+mkdir "&UC4RB_VSS_WORKING_DIR#"
+)
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_CMDLINE_CMD@WINDOWS
 
 :INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
 cd /d "&UC4RB_VSS_UTIL_DIR#"

@@ -51,6 +51,6 @@ Action Return Variable Should Be Equal As Integers
 
 Delete Dir
     [Arguments]    ${path}
-    Init Action    PCK.AUTOMIC_SHARED.PUB.ACTION.DELETE
+    Init Action    PCK.AUTOMIC_DEVLAB.PUB.ACTION.DELETE
     Action Set    &UC4RB_DIR_FILE_RM_NAME#    ${path}
     Action Set    &UC4RB_DIR_FILE_RM_FAIL#    No

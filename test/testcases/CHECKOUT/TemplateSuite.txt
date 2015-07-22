@@ -11,31 +11,31 @@ Resource          prt_keywords.txt
 
 *** Test Cases ***    OK_NOK                                  SS Utility Directory      Database Directory        VSS Username      VSS Password        Working Directory              Item                                   Recursive        Ignore Case    Comment      RETURN CODE    RETURN STATUS    MESSAGE
 01_Success Checkout non-recursive a folder to expected dir
-                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}01    $/fibo/folder                          No               Yes            checkout1    0              ${ENDED_OK}      ${EMPTY}
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}01    $/fibo/folder                          NO               YES            checkout1    0              ${ENDED_OK}      ${EMPTY}
 
 02_Success Checkout recursive folder to expected dir
-                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}02    $/fibo/folder                          Yes              Yes            checkout2    0              ${ENDED_OK}      ${EMPTY}
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}02    $/fibo/folder                          YES              YES            checkout2    0              ${ENDED_OK}      ${EMPTY}
 
 03_Fail Checkout not existed iteam
-                      NOK                                     ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}03    $/fibo/not existed                     Yes              Yes            checkout3    0              ${ENDED_NOK}     is not an existing filename or project
+                      NOK                                     ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}03    $/fibo/not existed                     YES              YES            checkout3    0              ${ENDED_NOK}     is not an existing filename or project
 
 04_Fail Checkout wrong SS Utility Dir
-                      NOK                                     Invalid                   ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}04    $/fibo/folder                          Yes              Yes            checkout4    0              ${ENDED_NOK}     ERROR[SS Utility Directory]: Utility directory 'Invalid' doesn't exist.
+                      NOK                                     Invalid                   ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}04    $/fibo/folder                          YES              YES            checkout4    0              ${ENDED_NOK}     ERROR[SS Utility Directory]: Utility directory 'Invalid' doesn't exist.
 
 05_Fail Checkout wrong DB Dir
-                      NOK                                     ${_VSS_SS_UTILITY_DIR}    Invalid                   ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}05    $/fibo/folder                          Yes              Yes            checkout5    0              ${ENDED_NOK}     No VSS database (srcsafe.ini) found
+                      NOK                                     ${_VSS_SS_UTILITY_DIR}    Invalid                   ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}05    $/fibo/folder                          YES              YES            checkout5    0              ${ENDED_NOK}     No VSS database (srcsafe.ini) found
                       #06_Fail Checkout wrong VSS User
-                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    Invalid             ${_VSS_PASSWORD}               ${DEFAULT_OUTPUT_DIR}${/}06            $/fibo/folder    Yes            Yes          checkout6      0                ${ENDED_CANCEL}                                                            ${EMPTY}
+                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    Invalid             ${_VSS_PASSWORD}               ${DEFAULT_OUTPUT_DIR}${/}06            $/fibo/folder    YES            YES          checkout6      0                ${ENDED_CANCEL}                                                            ${EMPTY}
                       #
                       #07_Fail Checkout wrong VSS Password
-                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    ${_VSS_USER}        Invalid                        ${DEFAULT_OUTPUT_DIR}${/}07            $/fibo/folder    Yes            Yes          checkout7      0                ${ENDED_CANCEL}                                                            ${EMPTY}
+                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    ${_VSS_USER}        Invalid                        ${DEFAULT_OUTPUT_DIR}${/}07            $/fibo/folder    YES            YES          checkout7      0                ${ENDED_CANCEL}                                                            ${EMPTY}
                       #
 
 08_Success Checkout Items contains space
-                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}08    $/fibo/new folder                      Yes              Yes            checkout8    0              ${ENDED_OK}      ${EMPTY}
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}08    $/fibo/new folder                      YES              YES            checkout8    0              ${ENDED_OK}      ${EMPTY}
 
 09_Success Checkout File
-                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}09    $/fibo/folder/siebel_server_sia.xml    Yes              Yes            checkout9    0              ${ENDED_OK}      ${EMPTY}
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}09    $/fibo/folder/siebel_server_sia.xml    YES              YES            checkout9    0              ${ENDED_OK}      ${EMPTY}
 
 *** Keywords ***
 Checkout Template

@@ -180,7 +180,7 @@
          </properties>
     </text><dynradiogroup alt="1" enabled="1" fill="b" focus="" id="UC4RB_VSS_RECURSIVEs.00" nl="1" text="Recursive" tooltip="Checks out all files that match the itemspec in the current directory or specified location and subfolders. (Option -R)" required="0">
       <properties>
-        <entry listparam="C,N" name="reference" reftype="STATIC">PCK.AUTOMIC_SHARED.PRV.VARA.YES_NO</entry>
+        <entry listparam="C,N" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry>
         <entry name="xmlkey"/>
         <entry name="xmlpath"/>
         <entry name="text">Recursive</entry>
@@ -195,7 +195,7 @@
          </properties>
     </dynradiogroup><dynradiogroup alt="1" enabled="1" fill="b" focus="" id="UC4RB_VSS_IGNORE_CASEs.00" nl="1" text="Ignore Case" tooltip="Ignores case, for example, the upper-case letter A is considered the same as the lower-case letter a. (Option -IC)" required="0">
       <properties>
-        <entry listparam="C,N" name="reference" reftype="STATIC">PCK.AUTOMIC_SHARED.PRV.VARA.YES_NO</entry>
+        <entry listparam="C,N" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry>
         <entry name="xmlkey"/>
         <entry name="xmlpath"/>
         <entry name="text">Ignore Case</entry>
@@ -239,7 +239,7 @@
     </text></readpanel></dialog>]]></XUIEDITOR>
 </PROMPTSETXUI>
 <PROMPTSETDATA state="1">
-<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_VSS_UTIL_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_UTIL_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_UTIL_DIRs.00><UC4RB_VSS_DB_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_DB_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_DB_DIRs.00><UC4RB_VSS_USERs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_USER#" ReadFromTable="OPSE"></UC4RB_VSS_USERs.00><UC4RB_VSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_PASSWORD#" ReadFromTable="OPSE"></UC4RB_VSS_PASSWORDs.00><UC4RB_VSS_WORKING_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_WORKING_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_WORKING_DIRs.00><UC4RB_VSS_ITEMs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_ITEM#" ReadFromTable="OPSE"></UC4RB_VSS_ITEMs.00><UC4RB_VSS_RECURSIVEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_RECURSIVE#" ReadFromTable="OPSE">Yes</UC4RB_VSS_RECURSIVEs.00><UC4RB_VSS_IGNORE_CASEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_IGNORE_CASE#" ReadFromTable="OPSE">Yes</UC4RB_VSS_IGNORE_CASEs.00><UC4RB_VSS_COMMENTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_COMMENT#" ReadFromTable="OPSE"></UC4RB_VSS_COMMENTs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_VSS_UTIL_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_UTIL_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_UTIL_DIRs.00><UC4RB_VSS_DB_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_DB_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_DB_DIRs.00><UC4RB_VSS_USERs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_USER#" ReadFromTable="OPSE"></UC4RB_VSS_USERs.00><UC4RB_VSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_PASSWORD#" ReadFromTable="OPSE"></UC4RB_VSS_PASSWORDs.00><UC4RB_VSS_WORKING_DIRs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_WORKING_DIR#" ReadFromTable="OPSE"></UC4RB_VSS_WORKING_DIRs.00><UC4RB_VSS_ITEMs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_ITEM#" ReadFromTable="OPSE"></UC4RB_VSS_ITEMs.00><UC4RB_VSS_RECURSIVEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_RECURSIVE#" ReadFromTable="OPSE">YES</UC4RB_VSS_RECURSIVEs.00><UC4RB_VSS_IGNORE_CASEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_IGNORE_CASE#" ReadFromTable="OPSE">YES</UC4RB_VSS_IGNORE_CASEs.00><UC4RB_VSS_COMMENTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_VSS_COMMENT#" ReadFromTable="OPSE"></UC4RB_VSS_COMMENTs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
 </PROMPTSETDATA>
 <DOCU_Docu state="1" type="text">
 <DOC/>

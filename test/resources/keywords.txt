@@ -53,4 +53,4 @@ Delete Dir
     [Arguments]    ${path}
     Init Action    PCK.AUTOMIC_DEVLAB.PUB.ACTION.DELETE
     Action Set    &UC4RB_DIR_FILE_RM_NAME#    ${path}
-    Action Set    &UC4RB_DIR_FILE_RM_FAIL#    No
+    Action Set    &UC4RB_DIR_FILE_RM_FAIL#    NO

@@ -9,6 +9,6 @@ Set Default Valid Promptset
     Action Set    ${PRT_CHECKOUT_VSS_PASSWORD}    ${VSS_PASSWORD}
     Action Set    ${PRT_CHECKOUT_VSS_WORKING_DIR}    ${VSS_WORKING_DIR}
     Action Set    ${PRT_CHECKOUT_VSS_ITEM}    ${VSS_ITEM}
-    Action Set    ${PRT_CHECKOUT_VSS_RECURSIVE}    Yes
-    Action Set    ${PRT_CHECKOUT_VSS_IGNORE_CASE}    Yes
+    Action Set    ${PRT_CHECKOUT_VSS_RECURSIVE}    YES
+    Action Set    ${PRT_CHECKOUT_VSS_IGNORE_CASE}    YES
     Action Set    ${PRT_CHECKOUT_VSS_COMMENT}    comment ${_CURRENT_TIMESTAMP}

@@ -57,10 +57,10 @@
 <PRPTBOX promptset="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">
 <UC4RB_VSS_COMMENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_COMMENT#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_DB_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_DB_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
-<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_IGNORE_CASEs.00>
+<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_IGNORE_CASEs.00>
 <UC4RB_VSS_ITEMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_ITEM#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_PASSWORD#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">--10</UC4RB_VSS_PASSWORDs.00>
-<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_RECURSIVEs.00>
+<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_RECURSIVEs.00>
 <UC4RB_VSS_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_USER#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_UTIL_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_UTIL_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_WORKING_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_WORKING_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
@@ -120,10 +120,10 @@
 <PRPTBOX promptset="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">
 <UC4RB_VSS_COMMENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_COMMENT#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_DB_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_DB_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
-<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_IGNORE_CASEs.00>
+<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_IGNORE_CASEs.00>
 <UC4RB_VSS_ITEMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_ITEM#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_PASSWORD#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">--10</UC4RB_VSS_PASSWORDs.00>
-<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_RECURSIVEs.00>
+<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_RECURSIVEs.00>
 <UC4RB_VSS_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_USER#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_UTIL_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_UTIL_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_WORKING_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_WORKING_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
@@ -169,10 +169,10 @@
 <PRPTBOX promptset="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">
 <UC4RB_VSS_COMMENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_COMMENT#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_DB_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_DB_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
-<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_IGNORE_CASEs.00>
+<UC4RB_VSS_IGNORE_CASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_IGNORE_CASE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_IGNORE_CASEs.00>
 <UC4RB_VSS_ITEMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_ITEM#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_PASSWORD#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">--10</UC4RB_VSS_PASSWORDs.00>
-<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">Yes</UC4RB_VSS_RECURSIVEs.00>
+<UC4RB_VSS_RECURSIVEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_RECURSIVE#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT">YES</UC4RB_VSS_RECURSIVEs.00>
 <UC4RB_VSS_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_USER#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_UTIL_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_UTIL_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
 <UC4RB_VSS_WORKING_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_VSS_WORKING_DIR#" promptsetname="PCK.AUTOMIC_VSS.PRV.PROMPTSET.CHECKOUT"/>
@@ -249,8 +249,8 @@
 <UC4RB_VSS_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_VSS_PASSWORDs.00>
 <UC4RB_VSS_WORKING_DIRs.00 altview="0" haslist="0"/>
 <UC4RB_VSS_ITEMs.00 altview="0" haslist="0"/>
-<UC4RB_VSS_RECURSIVEs.00 altview="0" haslist="0">Yes</UC4RB_VSS_RECURSIVEs.00>
-<UC4RB_VSS_IGNORE_CASEs.00 altview="0" haslist="0">Yes</UC4RB_VSS_IGNORE_CASEs.00>
+<UC4RB_VSS_RECURSIVEs.00 altview="0" haslist="0">YES</UC4RB_VSS_RECURSIVEs.00>
+<UC4RB_VSS_IGNORE_CASEs.00 altview="0" haslist="0">YES</UC4RB_VSS_IGNORE_CASEs.00>
 <UC4RB_VSS_COMMENTs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>

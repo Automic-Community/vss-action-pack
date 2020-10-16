@@ -1,0 +1,14 @@
+*** Keywords ***
+Set Default Valid Promptset
+    [Arguments]    ${VSS_UTIL_DIR}    ${VSS_DB_DIR}    ${VSS_USER}    ${VSS_PASSWORD}    ${VSS_WORKING_DIR}    ${VSS_ITEM}
+    ...    ${VSS_RECURSIVE}    ${VSS_IGNORE_CASE}    ${VSS_COMMENT}
+    ${_CURRENT_TIMESTAMP}    Get Time    epochs
+    Action Set    ${PRT_CHECKOUT_VSS_UTIL_DIR}    ${VSS_UTIL_DIR}
+    Action Set    ${PRT_CHECKOUT_VSS_DB_DIR}    ${VSS_DB_DIR}
+    Action Set    ${PRT_CHECKOUT_VSS_USER}    ${VSS_USER}
+    Action Set    ${PRT_CHECKOUT_VSS_PASSWORD}    ${VSS_PASSWORD}
+    Action Set    ${PRT_CHECKOUT_VSS_WORKING_DIR}    ${VSS_WORKING_DIR}
+    Action Set    ${PRT_CHECKOUT_VSS_ITEM}    ${VSS_ITEM}
+    Action Set    ${PRT_CHECKOUT_VSS_RECURSIVE}    YES
+    Action Set    ${PRT_CHECKOUT_VSS_IGNORE_CASE}    YES
+    Action Set    ${PRT_CHECKOUT_VSS_COMMENT}    comment ${_CURRENT_TIMESTAMP}

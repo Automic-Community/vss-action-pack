@@ -1,0 +1,75 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Setup_suite
+Suite Teardown    Teardown_suite
+Force Tags        CHECKOUT
+Default Tags      win    unix
+Test Template     Checkout Template
+Resource          ../../resources/keywords.txt
+Resource          prt_keywords.txt
+
+*** Test Cases ***    OK_NOK                                  SS Utility Directory      Database Directory        VSS Username      VSS Password        Working Directory              Item                                   Recursive        Ignore Case    Comment      RETURN CODE    RETURN STATUS    MESSAGE
+01_Success Checkout non-recursive a folder to expected dir
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}01    $/fibo/folder                          NO               YES            checkout1    0              ${ENDED_OK}      ${EMPTY}
+
+02_Success Checkout recursive folder to expected dir
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}02    $/fibo/folder                          YES              YES            checkout2    0              ${ENDED_OK}      ${EMPTY}
+
+03_Fail Checkout not existed iteam
+                      NOK                                     ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}03    $/fibo/not existed                     YES              YES            checkout3    0              ${ENDED_NOK}     is not an existing filename or project
+
+04_Fail Checkout wrong SS Utility Dir
+                      NOK                                     Invalid                   ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}04    $/fibo/folder                          YES              YES            checkout4    0              ${ENDED_NOK}     ERROR[SS Utility Directory]: Utility directory 'Invalid' doesn't exist.
+
+05_Fail Checkout wrong DB Dir
+                      NOK                                     ${_VSS_SS_UTILITY_DIR}    Invalid                   ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}05    $/fibo/folder                          YES              YES            checkout5    0              ${ENDED_NOK}     No VSS database (srcsafe.ini) found
+                      #06_Fail Checkout wrong VSS User
+                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    Invalid             ${_VSS_PASSWORD}               ${DEFAULT_OUTPUT_DIR}${/}06            $/fibo/folder    YES            YES          checkout6      0                ${ENDED_CANCEL}                                                            ${EMPTY}
+                      #
+                      #07_Fail Checkout wrong VSS Password
+                      #                                       NOK                       ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}    ${_VSS_USER}        Invalid                        ${DEFAULT_OUTPUT_DIR}${/}07            $/fibo/folder    YES            YES          checkout7      0                ${ENDED_CANCEL}                                                            ${EMPTY}
+                      #
+
+08_Success Checkout Items contains space
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}08    $/fibo/new folder                      YES              YES            checkout8    0              ${ENDED_OK}      ${EMPTY}
+
+09_Success Checkout File
+                      OK                                      ${_VSS_SS_UTILITY_DIR}    ${_VSS_DB_DIR}            ${_VSS_USER}      ${_VSS_PASSWORD}    ${DEFAULT_OUTPUT_DIR}${/}09    $/fibo/folder/siebel_server_sia.xml    YES              YES            checkout9    0              ${ENDED_OK}      ${EMPTY}
+
+*** Keywords ***
+Checkout Template
+    [Arguments]    ${OK_NOK}    ${VSS_UTIL_DIR}    ${VSS_DB_DIR}    ${VSS_USER}    ${VSS_PASSWORD}    ${VSS_WORKING_DIR}
+    ...    ${VSS_ITEM}    ${VSS_RECURSIVE}    ${VSS_IGNORE_CASE}    ${VSS_COMMENT}    ${returnCode}    ${returnStatus}
+    ...    ${message}
+    [Documentation]    This template is used for test CHECKOUT with needed arguments
+    ${_CURRENT_TIMESTAMP}    Get Time    epochs
+    Init Action    ${ACTION_CHECKOUT}
+    Action Set    ${PRT_CHECKOUT_VSS_UTIL_DIR}    ${VSS_UTIL_DIR}
+    Action Set    ${PRT_CHECKOUT_VSS_DB_DIR}    ${VSS_DB_DIR}
+    Action Set    ${PRT_CHECKOUT_VSS_USER}    ${VSS_USER}
+    Action Set    ${PRT_CHECKOUT_VSS_PASSWORD}    ${VSS_PASSWORD}
+    Action Set    ${PRT_CHECKOUT_VSS_WORKING_DIR}    ${VSS_WORKING_DIR}_${_CURRENT_TIMESTAMP}
+    Action Set    ${PRT_CHECKOUT_VSS_ITEM}    ${VSS_ITEM}
+    Action Set    ${PRT_CHECKOUT_VSS_RECURSIVE}    ${VSS_RECURSIVE}
+    Action Set    ${PRT_CHECKOUT_VSS_IGNORE_CASE}    ${VSS_IGNORE_CASE}
+    Action Set    ${PRT_CHECKOUT_VSS_COMMENT}    ${VSS_COMMENT} ${_CURRENT_TIMESTAMP}
+    Action Set Timeout    300
+    Action Execute
+    Action Report Should Be Found
+    Run Keyword If    '${OK_NOK}'=='OK'    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Report Should Contain    ${header_logging}
+    Action Report Should Contain    ${param_logging}
+    Run Keyword If    '${OK_NOK}'=='OK'    Action Report Should Contain    ${execution_logging}
+    Run Keyword If    '${OK_NOK}'=='OK'    Action Report Should Contain    ${message}
+    Run Keyword If    '${OK_NOK}'=='OK'    Action Report Should Contain    ${footer_logging_OK}
+
+Setup_suite
+    [Documentation]    TODO: Write all steps need prepare before testing here
+    Log    Start testing for Checkout Template
+
+Teardown_suite
+    [Documentation]    TODO: Write all steps for cleanup after testing here
+    Log    Testing for Checkout Template end
+    Delete Dir    ${DEFAULT_OUTPUT_DIR}${/}

@@ -1,9 +1,0 @@
-*** Variables ***
-###-------------------------VVNSIEBEL06--------------------###
-${VVNSIEBEL06_AGENT}    VVNSIEBEL06
-${VVNSIEBEL06_DEFAULT_OUTPUT_DIR}    D:\\AT_output
-${VVNSIEBEL06_DEFAULT_SOURCE_DIR}    D:\\AT_sources
-${VVNSIEBEL06_SS_UTILITY_DIR}    C:\\Program Files\\Microsoft Visual SourceSafe
-${VVNSIEBEL06_DB_DIR}    D:\\vss_db\\automic\\db01
-${VVNSIEBEL06_VSS_USER}    vss_user
-${VVNSIEBEL06_VSS_PASSWORD}    ventum2011@
